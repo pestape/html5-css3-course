@@ -1,0 +1,37 @@
+#box1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    /* Relative to its original place,
+    reserve space on the original place */
+    /* position: relative;
+    top: 100px;
+    left: 100px; */
+
+    /* Relative to the viewport, 
+    dont reserve space and hover other elements */
+    /* position: fixed;
+    right: 0px;
+    bottom: 0px; */
+
+    /* Relative to de scroll, 
+    reserve space and hover other elements */
+    position: sticky;
+    top: 0px;
+
+}
+
+#box2 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* Relative to it ancestor */
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    /* Return element to its original place
+    position: static; */
+
+
+}

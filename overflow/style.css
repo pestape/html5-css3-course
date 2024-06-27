@@ -1,0 +1,21 @@
+div {
+    border: 2px solid;
+    height: 75px;
+
+    /* Text pass through the borders of the tag */
+    /* overflow: visible; */
+
+    /* Text outside the border of the tag will be hidden */
+    /* overflow: hidden; */
+
+    /* Clip is like hidden , but you can adjust how much the text will pass through the borders using clip-margin */
+    /* overflow: clip;
+    overflow-clip-margin: 20px; */
+
+
+    /* Add a scroll bar to the tag */
+    /* overflow: scroll; */
+
+    /* Add a scroll bar on the tag only if it needs */
+    overflow: auto;
+}

@@ -1,0 +1,27 @@
+#container {
+    border: 2px solid;
+}
+
+/* Descendant relation uses empty space,
+it applies for all levels below */
+/* #container p{
+    background-color: blue;
+} */
+
+/* Child relation uses >, 
+It applies only on elements 1 level below */
+/* #container > p{
+    background-color: red;
+} */
+
+/* General sibling uses ~ , 
+It applies to all elements at level 0 (the same level) */
+/* #container ~ p{
+    background-color: red;
+} */
+
+/* Adjacent sibling uses +,
+It applies only at level 0 and in elements next to it */
+#container + p{
+    background-color: red;
+}

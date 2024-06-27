@@ -1,0 +1,13 @@
+body{
+    border: 3px solid;
+    /* Make all float components be inside this tag element */
+    display: flow-root; 
+}
+
+#img1{
+    float: left;
+}
+
+#img2{
+    float: right;
+}

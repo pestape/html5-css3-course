@@ -1,0 +1,38 @@
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: green;
+    font-size: 1.1em;
+}
+
+a:active {
+    color: yellow;
+    font-size: 1.1em;
+}
+
+a:visited {
+    color: gray;
+}
+
+/* li:hover{
+    background-color: red;
+}
+li:not(:hover){
+    background-color: blue;
+} */
+
+/* Can use numbers, odd, even , 3n (everr 3 elements) */
+li:nth-child(3n+1) {
+    background-color: gray;
+}
+
+#greeting p {
+    background-color: blue;
+    padding: 10px;
+    display: none;
+}
+#greeting:hover p{
+    display: block;
+}

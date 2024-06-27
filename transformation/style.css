@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+}
+
+.box{
+    width: 250px;
+    height: 250px;
+    border: 3px solid;
+    font-size: 13em;
+    text-align: center;
+    /* Values: numbers, %, px
+    translate(_,_), translateX(_), translateY(_) */
+    /* transform: translate(50px, 50px); */
+
+    /* Values: deg
+    rotateX(_), rotateY(_), rotateZ(_) */
+    /* transform: rotateZ(-45deg); */
+
+    /* Values: below 1 decrease scale , above 1 increase scale ,1 = 100%
+    scale(_,_), scaleX(_), scaleY(_) */
+    /* transform: scale(1.1,1.1); */
+    
+    /* Values: deg
+    skew(_,_), slewX(_), skewY(_) */
+    /* transform: skew(20deg, 20deg); */
+
+    /* You can use multible transformations at once*/
+    transform: translate(100px) rotateZ(45deg) scale(0.5)
+}
+
+#box1 {
+    background-color: blue;
+}
+
+#box2 {
+    background-color: red;
+}
+
+#box3 {
+    background-color: green;
+}
+
+

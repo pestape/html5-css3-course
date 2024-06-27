@@ -1,0 +1,10 @@
+body{
+    background-image: url(art.avif);
+    background-repeat: no-repeat;
+    /* Centers horizontally only */
+    background-position: center;
+    /* Sets if image scrolls or not */
+    background-attachment: fixed;
+    /* Spread image */
+    background-size: cover;
+}

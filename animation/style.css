@@ -1,0 +1,102 @@
+body {
+    background-color: gray;
+}
+
+#box {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    font-size: 13em;
+    text-align: center;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    /* Values: number, infinite */
+    animation-iteration-count: 1;
+    /* Values: normal, reverse , alternate,  alternate-reverse */
+    animation-direction: normal;
+    /* Values: paused , running */
+    animation-play-state: running;
+    /* Change the speed of the animation acelerating and slowing */
+    /* Values: ease-in-out, linear, steps(_) */
+    animation-timing-function: ease-in-out;
+
+}
+
+/* #box:hover {
+    animation-name: glow;
+    animation-duration: 3s;
+} */
+
+/* Values: to , from , %  
+When using % it will use the left % to return to the original state */
+@keyframes slideLeft {
+    from {
+        transform: translateX(300%);
+    }
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes rotate {
+    50% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes grow {
+    50% {
+        transform: scale(2, 2);
+    }
+}
+
+@keyframes shrink {
+    50% {
+        transform: scale(0.5, 0.5);
+    }
+}
+
+@keyframes fade {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: orange;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    75% {
+        background-color: white;
+    }
+}
+
+@keyframes glow {
+    50% {
+        box-shadow: 0px 0px 50px yellow;
+    }
+}
